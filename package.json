@@ -1,0 +1,21 @@
+{
+  "name": "quickshop-automation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:ui": "playwright test tests/ui --project=chromium",
+    "test:api": "playwright test tests/api --project=api",
+    "test:bdd": "cucumber-js",
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.0",
+    "playwright": "^1.45.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0",
+    "dotenv": "^16.4.5"
+  }
+}
